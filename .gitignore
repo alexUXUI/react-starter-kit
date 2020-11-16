@@ -1,0 +1,16 @@
+coverage/
+dist/
+node_modules/
+.DS_Store
+
+*.env
+
+!.babelrc
+!.tsconfig.json
+!.eslintrc
+
+!jest.config.js
+!packaage.json
+!packaage-lock.json
+!webpack.config.js
+!scripts/
