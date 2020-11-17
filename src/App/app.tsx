@@ -1,14 +1,12 @@
 import * as React from 'react'
 import { AppLogic } from './App.logic';
-import './App.styles.css';
+import './App.styles.scss';
 
 export const App = () => {
 
     const [sum, setSum] = React.useState<number>(0);
 
     return (
-
-
         <div className="app" data-testid="app">
             <h1>Book Of Business</h1>
             <button
@@ -21,8 +19,11 @@ export const App = () => {
 
             >
                 sum
-        </button>
+            </button>
+            {process.env.API_URL_BASE}
             {sum}
+
+            BIG CHANGE!
         </div>
     )
 }
